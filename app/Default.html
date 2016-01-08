@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="motivateMeApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Motivate me!</title>
+<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div ng-controller="QuoteController">
+        <div ng-repeat="tag in tags">
+                 <button  class="btn btn-success" ng-click="write(tag)">{{tag.name}}</button>
+        </div>
+    <div class="">
+        {{quote.title}}
+    </div>
+    </div>
+</div>
+
+<script src="lib/jquery-1.11.3.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/angular/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers/QuoteController.js"></script>
+</body>
+</html>
